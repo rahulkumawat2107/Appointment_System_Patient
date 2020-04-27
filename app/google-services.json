@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1065602665787",
+    "firebase_url": "https://appointmentsystempatient.firebaseio.com",
+    "project_id": "appointmentsystempatient",
+    "storage_bucket": "appointmentsystempatient.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065602665787:android:a5fbe75e7a7c0fd72afb1e",
+        "android_client_info": {
+          "package_name": "com.example.appointment_system_patient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065602665787-ilu6idodb4mueen47c3qmarnh27de79r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf2GDunk6t6FnJdgwF0B5yzHxn38zGeQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065602665787-ilu6idodb4mueen47c3qmarnh27de79r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Patient_details_starting">
+
+    <LinearLayout
+        android:layout_below="@+id/logo"
+        android:id="@+id/linear_layout"
+        android:background="@drawable/edit_rec"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please fill your details"
+            android:textSize="25dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/googlesansregular"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:padding="5dp"></TextView>
+
+        <EditText
+            android:layout_marginTop="18dp"
+            android:id="@+id/p_name"
+            android:hint="Name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/googlesansregular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/p_email"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/googlesansregular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/age"
+            android:inputType="number"
+            android:layout_marginLeft="5dp"
+            android:hint="Age"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/googlesansregular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/blood_grp"
+            android:layout_marginLeft="5dp"
+            android:hint="Blood Group"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/googlesansregular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/address"
+            android:layout_marginLeft="5dp"
+            android:hint="Address"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/googlesansregular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit_details"
+            android:text="Submit"
+            android:background="@drawable/submit"
+            android:fontFamily="@font/googlesansregular"
+            android:textColor="#0999ED"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="Or ? ">
+
+        </TextView>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:fontFamily="@font/googlesansregular"
+            android:textColor="#0999ED"
+            android:text="Skip"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

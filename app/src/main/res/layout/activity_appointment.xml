@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="match_parent"
+    tools:context=".Appointment">
+
+    <LinearLayout
+        android:layout_above="@+id/appt_confirm"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <devs.mulham.horizontalcalendar.HorizontalCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F3F3F3"
+            android:fontFamily="@font/googlesansregular"
+            app:textColorNormal="#000"
+            ></devs.mulham.horizontalcalendar.HorizontalCalendarView>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#F3F3F3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <!-- our tablayout to display tabs  -->
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:minHeight="20dp">
+
+            </com.google.android.material.tabs.TabLayout>
+            <!-- View pager to swipe views -->
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/appt_confirm"
+        android:layout_alignParentBottom="true"
+        android:elevation="5dp"
+        android:weightSum="2"
+        android:background="#fff"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="-"
+                    android:id="@+id/appt_date"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/googlesansregular"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/appt_time"
+                    android:layout_width="wrap_content"
+                    android:text=", -"
+                    android:fontFamily="@font/googlesansregular"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/appt_price"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:text="₹ 300"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/googlesansregular"
+                android:textColor="#000"
+                android:layout_height="wrap_content"></TextView>
+
+        </LinearLayout>
+
+        <Button
+
+            android:id="@+id/confirm_appt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/submit"
+            android:fontFamily="@font/googlesansregular"
+            android:text="Confirm"
+            android:textColor="#000"></Button>
+
+    </LinearLayout>
+
+</RelativeLayout>
